@@ -1,0 +1,89 @@
+body{
+  background-color: #EEE8AA;
+}
+@font-face {
+  font-family: 'splatch';
+  src: url('../Font/SuperMario256.ttf') format('truetype');
+
+}
+h1{
+  font-size: 50px;
+  font-family: 'splatch';
+  margin: 10px;
+  text-align: center;
+}
+h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: 'splatch';
+  margin: 10px;
+}
+h3 {
+  font-size: medium;
+  position: relative;
+  top: -200px;
+  right: -1100px;
+}
+
+button {
+  padding: 18px 40px;
+  font-size: 16px;
+  color: black;
+  background: 	#8B4513;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+button:hover{
+  opacity: .7;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  cursor: url(../img/palu1.png), auto;
+}
+
+.container:active {
+  cursor: url(../img/palu2.png), auto;
+}
+
+.tanah {
+  top: -50px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.tanah::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 100px;
+  background: url(../img/tanah.png) bottom center no-repeat;
+  background-size: 80%;
+  position: absolute;
+  bottom: -25px;
+}
+
+.tikus {
+  width: 100%;
+  height: 100%;
+  background: url(../img/tikus.png) bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100px;
+  transition: top 0.3s;
+}
+
+.tanah.muncul .tikus {
+  top: -15px;
+}
