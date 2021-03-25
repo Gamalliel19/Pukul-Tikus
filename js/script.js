@@ -42,6 +42,9 @@ function mulai() {
   munculkanTikus();
   setTimeout(() => {
     selesai = true;
+    if (selesai){
+      alert("Game Selesai! Skor kamu: " + skor)
+    }
   }, 10000);
 }
 
@@ -51,6 +54,7 @@ function pukul() {
   pop.play();
   papanSkor.textContent = skor;
 }
+
 
 tikus.forEach(t => {
   t.addEventListener('click', pukul);

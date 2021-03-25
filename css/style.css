@@ -6,6 +6,9 @@ body{
   src: url('../Font/SuperMario256.ttf') format('truetype');
 
 }
+body{
+  margin-top: 50px;
+}
 h1{
   font-size: 50px;
   font-family: 'splatch';
